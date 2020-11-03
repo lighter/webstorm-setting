@@ -1,0 +1,8 @@
+<templateSet group="Vue">
+  <template name="vs" value="&lt;template&gt;&#10;  &lt;div class=&quot;app-container&quot;&gt;&#10;    &lt;h1&gt;{{ $t('') }}&lt;/h1&gt;&#10;    &lt;BackToTop /&gt;&#10;    &lt;div class=&quot;ma-toggle&quot;&gt;&#10;      &lt;span class=&quot;ma-toggle__icon&quot; @click=&quot;listToggle = !listToggle&quot;&gt;&#10;        &lt;svg-icon v-if=&quot;listToggle&quot; icon-class=&quot;minus&quot; /&gt;&#10;        &lt;svg-icon v-if=&quot;!listToggle&quot; icon-class=&quot;plus&quot; /&gt;&#10;      &lt;/span&gt;&#10;      &lt;el-collapse-transition&gt;&#10;        &lt;div v-show=&quot;listToggle&quot;&gt;&#10;          123&#10;        &lt;/div&gt;&#10;      &lt;/el-collapse-transition&gt;&#10;    &lt;/div&gt;&#10;  &lt;/div&gt;&#10;&lt;/template&gt;&#10;&#10;&lt;script&gt;&#10;import BackToTop from '@/components/BackToTop'&#10;import commonMixin from '@/mixin/commonMixin'&#10;&#10;export default {&#10;  name: '$Name$',&#10;  components: { BackToTop },&#10;  mixins: [commonMixin],&#10;  data() {&#10;    return {&#10;      listToggle: true&#10;    }&#10;  }&#10;}&#10;&lt;/script&gt;&#10;&#10;&lt;style lang=&quot;scss&quot; scoped&gt;&#10;.el-form-item /deep/ {&#10;  .el-form-item__content {&#10;    text-align: left;&#10;  }&#10;}&#10;&lt;/style&gt;&#10;" description="view list" toReformat="false" toShortenFQNames="true">
+    <variable name="Name" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="Vue" value="true" />
+    </context>
+  </template>
+</templateSet>
